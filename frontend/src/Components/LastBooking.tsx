@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { seats, slots } from "../data/Data";
+import { seats } from "../data/Data";
 import { lastBookingType } from "../types/apiTypes";
 import { lastBooking } from "../../api/booking";
 import { LastBookingProps } from "../types/radioComponent";
