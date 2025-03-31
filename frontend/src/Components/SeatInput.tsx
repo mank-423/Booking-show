@@ -1,6 +1,6 @@
-import { RadioComponentProps } from "../types/radioComponent";
+import { SeatInputComponentProps } from "../types/radioComponent";
 
-const SeatInput: React.FC<RadioComponentProps> = ({ text }) => {
+const SeatInput: React.FC<SeatInputComponentProps> = ({ text, changeSelection }) => {
     return (
       <div className="flex border py-4 px-1 gap-5 cursor-pointer items-center">
         {/* Ensure both spans take equal width */}
@@ -16,6 +16,8 @@ const SeatInput: React.FC<RadioComponentProps> = ({ text }) => {
             placeholder="0"
             max={30}
             min={0}
+            onChange={changeSelection}
+            name={text}
           />
         </span>
       </div>
